@@ -1,0 +1,15 @@
+<h1>
+{{title}}
+</h1>
+
+<p>
+¿Cómo te llamas? <input type="text" [(ngModel)]="quien">
+</p>
+
+
+<p [hidden]="!visible">
+{{quien}}
+</p>
+
+<button (click)="Mostrar()">Mostrar</button>
+<button (click)="Ocultar()">Ocultar</button>
